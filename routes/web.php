@@ -7,6 +7,8 @@ use Illuminate\Http\Request;
 use Inertia\Inertia;
 
 use App\Http\Controllers\TopController;
+use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\TaskController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,10 +30,25 @@ use App\Http\Controllers\TopController;
 //     ]);
 // });
 
-Route::get('/', [TopController::class, 'index'] );
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 require __DIR__.'/auth.php';
+
+Route::get('/', [TopController::class, 'index'] );
+
+Route::get('/categories', [CategoryController::class, 'index'])->name('categories.index');
+
+Route::get('/tasks/create', [TaskController::class, 'create'])->name('tasks.create');
+
+Route::get('/categories/tasks/{task}', [TaskController::class, 'show'])->name('tasks.show');
+
+Route::get('/tasks/{task}/edit', [TaskController::class, 'edit'])->name('tasks.edit');
+
+Route::post('/tasks', [TaskController::class, 'store'])->name('tasks.store');
+
+Route::put('/tasks/{task}', [TaskController::class, 'update'])->name('tasks.update');
+
+Route::delete('/tasks/{task}', [TaskController::class, 'destory'])->name('tasks.destory');
