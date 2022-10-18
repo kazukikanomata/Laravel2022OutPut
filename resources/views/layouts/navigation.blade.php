@@ -9,16 +9,16 @@
                         <x-application-logo class="block h-10 w-auto fill-current text-gray-600" />
                     </a>
                 </div>
-
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
-                        {{ __('Dashboard') }}
+                        <h3 class="my-5 text-3xl font-bold">Focus</h3>
                     </x-nav-link>
                 </div>
             </div>
 
             <!-- Settings Dropdown -->
+            @auth
             <div class="hidden sm:flex sm:items-center sm:ml-6">
                 <x-dropdown align="right" width="48">
                     <x-slot name="trigger">
@@ -37,7 +37,6 @@
                         <!-- Authentication -->
                         <form method="POST" action="{{ route('logout') }}">
                             @csrf
-
                             <x-dropdown-link :href="route('logout')"
                                     onclick="event.preventDefault();
                                                 this.closest('form').submit();">
@@ -47,6 +46,23 @@
                     </x-slot>
                 </x-dropdown>
             </div>
+            @else
+
+            @if (Route::has('login'))
+               <div class="hidden items-center px-6 sm:flex">
+                    @auth
+                    <a href="{{ route('dashboard') }}" class="text-sm text-gray-700 dark:text-gray-500 ">{{ __('Dashboard') }}</a>
+                    @else
+                    <a href="{{ route('login') }}" class="text-sm text-gray-700 dark:text-gray-500 ">{{ __('Login') }}</a>
+
+                    @if (Route::has('register'))
+                    <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 dark:text-gray-500 ">{{__('Register')}}</a>
+                    @endif
+                    @endauth
+               </div>
+            @endif
+
+            @endauth
 
             <!-- Hamburger -->
             <div class="-mr-2 flex items-center sm:hidden">
@@ -63,19 +79,24 @@
     <!-- Responsive Navigation Menu -->
     <div :class="{'block': open, 'hidden': ! open}" class="hidden sm:hidden">
         <div class="pt-2 pb-3 space-y-1">
+            @auth
             <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                 {{ __('Dashboard') }}
             </x-responsive-nav-link>
+            @endauth
         </div>
 
         <!-- Responsive Settings Options -->
         <div class="pt-4 pb-1 border-t border-gray-200">
+            @auth
             <div class="px-4">
                 <div class="font-medium text-base text-gray-800">{{ Auth::user()->name }}</div>
                 <div class="font-medium text-sm text-gray-500">{{ Auth::user()->email }}</div>
             </div>
+            @endauth
 
             <div class="mt-3 space-y-1">
+                @auth
                 <!-- Authentication -->
                 <form method="POST" action="{{ route('logout') }}">
                     @csrf
@@ -86,6 +107,10 @@
                         {{ __('Log Out') }}
                     </x-responsive-nav-link>
                 </form>
+                @else
+                <x-responsive-nav-link :href="route('login')">{{ __('Login') }}</x-responsive-nav-link>
+                <x-responsive-nav-link :href="route('register')">{{ __('Register') }}</x-responsive-nav-link>
+                @endauth
             </div>
         </div>
     </div>
