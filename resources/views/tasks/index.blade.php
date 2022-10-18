@@ -7,7 +7,7 @@
         @vite('resources/css/app.css')
     </head>
     <body>
-        <div class="container">
+        <div class="container-fluid">
             <div class="row justify-center-center">
                 <div class="col-md-12">
                     <div class="navbar bg-base-300 rounded-box">
