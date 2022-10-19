@@ -32,9 +32,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::table('tasks',function (Blueprint $table){
-            $table->softDeletes();
-        });
         Schema::dropIfExists('tasks');
     }
 };
