@@ -42,3 +42,6 @@ Route::post('/tasks', [TaskController::class, 'store'])->name('tasks.store');
 Route::put('/tasks/{task}', [TaskController::class, 'update'])->name('tasks.update');
 
 Route::delete('/tasks/{task}', [TaskController::class, 'destory'])->name('tasks.destory');
+
+Route::get('/linelogin', [App\Http\Controllers\LineLoginController::class, 'lineLogin'])->name('linelogin');
+Route::get('/callback', [App\Http\Controllers\LineLoginController::class,'callback'])->name('callback');
