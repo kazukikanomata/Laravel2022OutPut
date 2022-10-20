@@ -7,7 +7,6 @@
         @vite('resources/css/app.css')
     </head>
     <body>
-        
         <x-app-layout>
             <div class="card w-96 bg-base-100 shadow-xl" style="width: 400px; margin: auto;">
                 <div class="card-body">
