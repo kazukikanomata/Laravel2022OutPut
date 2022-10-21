@@ -8,7 +8,7 @@
     </head>
     <body>
         <x-app-layout>
-            <div class="container-fluid">
+            <div class="md:container md:mx-auto py-2">
                 <div class="row justify-center-center">
                     <div class="col-md-12">
                         <div class="navbar bg-base-300 rounded-box">
@@ -36,7 +36,7 @@
                             <div class="alert alert-success">{{ session('message') }}</div>
                         @endif
                         <div class="mt-4 mb-4">
-                            <p>{{ $tasks->total() }}件が見つかりました。</p>
+                            <p class="mx-2">{{ $tasks->total() }}件が見つかりました。</p>
                         </div>
                         <div class="overflow-x-auto">
                             <table class="table w-full my-2">
