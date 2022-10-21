@@ -42,7 +42,7 @@
             </div>
 
             <!-- line login -->
-            <a href="{{ route('linelogin') }}">LINEログイン</a>
+            <a href="{{ route('linelogin') }}"><img src="/btn_login_base.png" width="150" height="auto"></img></a>
 
             <div class="flex items-center justify-end mt-4">
                 @if (Route::has('password.request'))
