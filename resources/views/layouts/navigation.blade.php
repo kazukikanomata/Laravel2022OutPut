@@ -11,8 +11,8 @@
                 </div>
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
-                        <h3 class="my-5 text-3xl font-bold">Focus</h3>
+                    <x-nav-link :href="route('tops.index')" :active="request()->routeIs('dashboard')">
+                        <!-- no message -->
                     </x-nav-link>
                 </div>
             </div>
