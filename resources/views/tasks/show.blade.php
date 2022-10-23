@@ -8,11 +8,10 @@
     </head>
     <body>
         <x-app-layout>
-            <div class="container">
+            <div class="md:container md:mx-auto py-2">
                 <div class="row justify-center-center mx-auto">
                     <div class="col-md-10 mx-auto">
                         <div class="card">
-                            <div class="card-header">タスク詳細</div>
                             <div class="card-body">
                                 <table class="table">
                                     <thead>
@@ -37,7 +36,7 @@
                                                 <a href="{{ route('tasks.edit',['task'=> $task->id]) }}" class="btn btn-success">編集</a>
                                             </td>
                                             <td>
-                                                <form method="post" action="{{ action('TaskController@destory', $task->id) }}" id="delete_{{ $task->id }}" >
+                                                <form method="post" action="{{ route('tasks.destory', $task->id) }}" id="delete_{{ $task->id }}" >
                                                     @csrf
                                                     @method('DELETE')
                                                     <button type="submit" class="btn btn-danger" onclick="return confirm('本当に削除しますか？');">-タスク</button>

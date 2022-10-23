@@ -43,7 +43,7 @@
                             </select>
                         </div>
                         <button type="submit" class="btn btn-primary">送信</button>
-                        <button type="button" onClick="history.back()" class="btn btn-danger">戻る</button>
+                        <a href="{{ route('categories.index') }}" class="btn btn-danger">戻る</a>
                     </form>
                 </div>
             </div>
