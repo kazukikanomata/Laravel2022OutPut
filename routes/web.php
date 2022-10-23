@@ -27,7 +27,7 @@ Route::get('/dashboard', function () {
 
 require __DIR__.'/auth.php';
 
-Route::get('/', [TopController::class, 'index'] );
+Route::get('/', [TopController::class, 'index'] )->name('tops.index');
 
 Route::get('/categories', [CategoryController::class, 'index'])->name('categories.index');
 
