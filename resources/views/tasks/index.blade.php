@@ -12,7 +12,7 @@
                 <div class="row justify-center-center">
                     <div class="col-md-12">
                         <div class="navbar bg-base-300 rounded-box">
-                            <a class="btn btn-ghost normal-case">FoCus</a>
+                        <h3 class="ml-3 my-5 text-3xl font-bold">Focus</h3>
                             <div class="flex justify-end flex-1 px-2">
                                 <div class="flex items-stretch">
                                     <a href="{{ route('tasks.create') }}" class="btn btn-primary mx-2">+タスク</a>
@@ -47,8 +47,8 @@
                                         <th class="due_time">期限</th>
                                         <th class="status">状態</th>
                                         <th class="time">h : m</th>
-                                        <th class="icon"></th>
-                                        <th class="icon"></th>
+                                        <th class="icon">Edit</th>
+                                        <th class="icon">delete</th>
                                     </tr>
                                 </thead>
                                 <tbody>
