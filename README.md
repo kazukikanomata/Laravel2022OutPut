@@ -1,66 +1,78 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+# Content
+My CS50 project is done. <br>
+I made Todo Application by laravel. To be honest, I was busy working summer intern program at the same time, but I managed to do this project.<br>
+This project's point is able to controll my task every catrgorires. I made four categories.<br>
+NW is stand for Needs Work. Let me give you an example. Needs Work is like your homework or your jobs which you work at the company etc... 
+NP is stand for Needs Private. Let me give you. Needs Private is clean your room or have a meal etc... 
+WW is stand for Wants Work. Let me give . Wants Work is study to invest or to make an application etc...
+WP is stand for Wants Private. Let me . Wants Private is like a web design or your hobbys.<br>
+This four categories will make your lives userful. More or less, you don't have to think about tasks or You can decide to do tasks what you must do early.<br>
+In the future, I want to add two functions.<br>
+First, I'd like to use API with LINE API userfriendly. In Japan, A lot of people use LINE application, so I think it is essential to connect LINE.
+Chat bot and LINE LOGIN funciton are very useful.<br>
+Second, I'd like to add midle table. Now, This application has one to many about tasks table and categories table.
+Using midle table, it'll be many to many table design, so User is able to add category which they want to add.<br>
+That's why I want to add two functions.
 
-## About Laravel
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## プロジェクト名 : FoCus
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+<p>Laravelにてタスク管理ができる。Webアプリをつくりました。</p>
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+<p>Youtube:　https://youtu.be/6ovQ1A9Y3Pk</p> 
 
-## Learning Laravel
+## 技術
+<ul>
+    <li> Laravel 9</li>
+    <li> MySQL8 </li>
+    <li> PHP 8.1.2 </li>
+    <li> Breeze </li>
+    <li> XAMPP</li>
+    <li> Docker</li>
+    <li> TailWindCSS DaisyUI</li>
+</ul>
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+## 目的
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+<p>自分自身がマルチタスク人間であり、優先順位がつけられないこと。</p>
 
-## Laravel Sponsors
+<p>また、マルチタスクは生産性を著しく下げます。</p>
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+>ミシガン大学の心理学教授らによると、マルチタスクをする人たちは、タスクをひとつずつこなすグループよりも、40パーセントも生産性が低いという研究結果を発表しています。
 
-### Premium Partners
+>記憶にかかわる脳の「海馬」に作用し、記憶力の低下につながることが東京医科歯科大学脳統合機能研究センター特任教授・朝田隆氏監修）によって示されています。
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+<p>そういった問題を対処したいということからこのアプリで改善できたらと思い、作成しました。</p>
 
-## Contributing
+## URL
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+<p> URL：https://kazu-focus.xyz/ </p>
 
-## Code of Conduct
+<p>【テスト用アカウント】</p>
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+<p>メールアドレス：test@123456.com </p>
 
-## Security Vulnerabilities
+<p>パスワード：test1234</p>
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## 機能
 
-## License
+<ol>
+    <li>CRUD機能</li>
+    <li>カテゴリーごとにタスクを表示</li>
+    <li>LINEのAPI ログイン</li>
+    <li>LINEMessageAPIと連携　→　まだ実装途中</li>
+</ol>
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## ER図
+
+
+![スクリーンショット (301) - コピー](https://user-images.githubusercontent.com/77597098/157237823-2fe4e4b9-4049-46d4-b1e5-53e09a0236cd.png)
+
+## 今後
+<ol>
+    <li> 中間テーブルを設置して、多対多のテーブルを設計し、カテゴリーを増やせるようにする</li>
+    <li> LINE API　チャットボットと連携</li>
+</ol>
