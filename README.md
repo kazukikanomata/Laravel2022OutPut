@@ -32,6 +32,7 @@ That's why I want to add two functions.
     <li> XAMPP</li>
     <li> Docker</li>
     <li> TailWindCSS DaisyUI</li>
+    <li> Laravel forge</li>
 </ul>
 
 
