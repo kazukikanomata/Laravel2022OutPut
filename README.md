@@ -17,7 +17,7 @@ Using midle table, it'll be many to many table design, so User is able to add ca
 That's why I want to add two functions.
 
 
-## プロジェクト名 : FoCus
+## プロジェクト名 : Focus
 
 <p>Laravelにてタスク管理ができる。Webアプリをつくりました。</p>
 
