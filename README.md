@@ -69,46 +69,7 @@ That's why I want to add two functions.
 
 ## ER図
 
-```mermaid　
-erDiagram
-
-    users ||--o{ tasks : "1人のユーザが複数のタスクをもつ"
-    categories ||--o{ tasks : "1つのカテゴリーに対して複数のタスク"
-    users ||--|{ categories : "ここは1対1"
-
-    users {
-        bigint id FK
-        varchar name "ユーザー名"
-        varchar email
-        timestamp  email_verified_at
-        varchar password
-        varchar provider
-        varchar line_id
-        varchar remember_token
-        timestamp created_at
-        timestamp updated_at
-    }
-    
-    tasks {
-        bigint id FK
-        varchar content
-        varchar status
-        time time
-        datetime due_time
-        int user_id
-        int category_id
-        timestamp created_at
-        timestamp updated_at
-        timestamp deleted_at
-    }
-    
-    categories {
-        bigint id FK
-        varchar name
-        timestamp created_at
-        timestamp updated_at	
-    }
-```
+[![](https://mermaid.ink/img/pako:eNqdVMFu1DAQ_RXL57Ta7Hbbbc6IC-LEDUWK3Hh2azWxV46zsGT3kESCC0gIhPiBqodWYjkgJKoKPsYU8RnYSZck2hwoVpQo82bevPGMneFQUMAeBvmAkZkksc99jsxKE5AJWq329kSGFEnOEuQhH7s_r691_kmXF7q80cVXnb_-ff7q14fP1lj80MU3XWx08U4Xhc7PfVyThUTBTEgGfYzGrwq-0uVLXXzR5aWlzq9uN991_lHnF7sJtryNyFXWTmJ5df6-ejauIXJtRDsmq3_sOmEzxhViFD181FgXRIanRCJOYrBsfwsub27fvtkKaHtCTFjUmBWLIVEknqMaCRYg2ZQBDYjaDZ6TJHkmJO1BpFgwCnIXiRiHgPWESIghPgEZKHEGvE9SKMHsVldKg6Zz2kHX9afu2T_vXCi4At5Tq0mi0qSbuHo1Jpu_MtMUgi5kM9oediq3xrv-LzvA_5bcRSlE0LMhrYm71zzdX56vWgK3IrCDY5Bmtqg5wJUAH6tT03sf2wNAYUrSSNlRta4kVeLJkofYUzIFB9eEd6cee1MSJcYKlCkhH9eXQnU3OHhO-FMhGh_zj70MP8fe8WjfPZgMj4aH48F4MjwYOXiJPdcd7Q_sOjweDI8m4_Fo7eAXFYO7_gNGN5CQ?type=png)](https://mermaid-js.github.io/mermaid-live-editor/edit#pako:eNqdVMFu1DAQ_RXL57Ta7Hbbbc6IC-LEDUWK3Hh2azWxV46zsGT3kESCC0gIhPiBqodWYjkgJKoKPsYU8RnYSZck2hwoVpQo82bevPGMneFQUMAeBvmAkZkksc99jsxKE5AJWq329kSGFEnOEuQhH7s_r691_kmXF7q80cVXnb_-ff7q14fP1lj80MU3XWx08U4Xhc7PfVyThUTBTEgGfYzGrwq-0uVLXXzR5aWlzq9uN991_lHnF7sJtryNyFXWTmJ5df6-ejauIXJtRDsmq3_sOmEzxhViFD181FgXRIanRCJOYrBsfwsub27fvtkKaHtCTFjUmBWLIVEknqMaCRYg2ZQBDYjaDZ6TJHkmJO1BpFgwCnIXiRiHgPWESIghPgEZKHEGvE9SKMHsVldKg6Zz2kHX9afu2T_vXCi4At5Tq0mi0qSbuHo1Jpu_MtMUgi5kM9oediq3xrv-LzvA_5bcRSlE0LMhrYm71zzdX56vWgK3IrCDY5Bmtqg5wJUAH6tT03sf2wNAYUrSSNlRta4kVeLJkofYUzIFB9eEd6cee1MSJcYKlCkhH9eXQnU3OHhO-FMhGh_zj70MP8fe8WjfPZgMj4aH48F4MjwYOXiJPdcd7Q_sOjweDI8m4_Fo7eAXFYO7_gNGN5CQ)
 
 ![スクリーンショット (301) - コピー](https://user-images.githubusercontent.com/77597098/157237823-2fe4e4b9-4049-46d4-b1e5-53e09a0236cd.png)
 
