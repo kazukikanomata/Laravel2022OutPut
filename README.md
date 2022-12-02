@@ -69,8 +69,50 @@ That's why I want to add two functions.
 
 ## ER図
 
+```mermaid　
+erDiagram
+
+    users ||--o{ tasks : "1人のユーザが複数のタスクをもつ"
+    categories ||--o{ tasks : "1つのカテゴリーに対して複数のタスク"
+    users ||--|{ categories : "ここは1対1"
+
+    users {
+        bigint id FK
+        varchar name "ユーザー名"
+        varchar email
+        timestamp  email_verified_at
+        varchar password
+        varchar provider
+        varchar line_id
+        varchar remember_token
+        timestamp created_at
+        timestamp updated_at
+    }
+    
+    tasks {
+        bigint id FK
+        varchar content
+        varchar status
+        time time
+        datetime due_time
+        int user_id
+        int category_id
+        timestamp created_at
+        timestamp updated_at
+        timestamp deleted_at
+    }
+    
+    categories {
+        bigint id FK
+        varchar name
+        timestamp created_at
+        timestamp updated_at	
+    }
+```
 
 ![スクリーンショット (301) - コピー](https://user-images.githubusercontent.com/77597098/157237823-2fe4e4b9-4049-46d4-b1e5-53e09a0236cd.png)
+
+
 
 ## 今後
 <ol>
