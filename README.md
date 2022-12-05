@@ -74,6 +74,20 @@ That's why I want to add two functions.
 
 ## 今後
 <ol>
+    <li> Vue.jsでSPA実装</li>
     <li> 中間テーブルを設置して、多対多のテーブルを設計し、カテゴリーを増やせるようにする</li>
     <li> LINE API　チャットボットと連携</li>
+    <li> Reactでリファクタリング</li>
+</ol>
+
+## 12月中
+<ol>
+    <li>Vue.jsでのSPA</li>
+    <li> LINE API　チャットボットと連携</li>
+</ol>
+
+## 1月中
+<ol>
+    <li> Reactでリファクタリング</li>
+    <li> 中間テーブルを設置して、多対多のテーブルを設計し、カテゴリーを増やせるようにする</li>
 </ol>
